@@ -10,7 +10,7 @@ Parameter to_Z_aux : forall {Z positive : Type},
   Z -> (positive -> Z) -> (positive -> Z) ->
   positive -> (positive -> positive) -> (positive -> positive) ->
   Z.
-Extract Constant to_Z_aux => "Extraction.BigInt.to_Z_aux".
+Extract Constant to_Z_aux => "ExtractionBigInt.to_Z_aux".
 
 (** Export to a `Z`. *)
 Definition to_Z (big : t) : Z :=
